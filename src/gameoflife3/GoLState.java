@@ -9,13 +9,7 @@ package gameoflife3;
  *
  * @author Robert
  */
-public class GameOfLife {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+public enum GoLState {
+    DEAD,
+    ALIVE
 }
