@@ -13,7 +13,12 @@ package gameoflife3;
 public class GameOfLifeRule {
 
     public boolean cellWillLive(int numberOfNeighbours, GoLState goLState) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (numberOfNeighbours == 3){
+            return true;
+        }
+        else {
+        return false;
+        }
     }
     
 }
