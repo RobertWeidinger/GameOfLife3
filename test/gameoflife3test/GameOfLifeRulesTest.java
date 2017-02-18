@@ -52,5 +52,15 @@ public class GameOfLifeRulesTest {
                 Assert.assertFalse(gameOfLifeRule.cellWillLive(numberOfNeighbours,GoLState.DEAD));
         }
      }
+    
+    @Test
+    public void testGameOfLifeRule2_3_4() {
+        for (int numberOfNeighbours=0; numberOfNeighbours<100; numberOfNeighbours++) {
+            if (numberOfNeighbours==2 || numberOfNeighbours==3)
+                Assert.assertTrue(gameOfLifeRule.cellWillLive(numberOfNeighbours,GoLState.ALIVE));
+            else
+                Assert.assertFalse(gameOfLifeRule.cellWillLive(numberOfNeighbours,GoLState.ALIVE));
+        }
+    }
 
 }

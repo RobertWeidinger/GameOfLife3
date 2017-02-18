@@ -18,7 +18,8 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-    gameoflife3test.GameOfLifeRulesTest.class
+    gameoflife3test.GameOfLifeRulesTest.class,
+    gameoflife3test.GenerationTest.class
 })
 public class GameOfLifeTestSuite {
 
