@@ -32,7 +32,7 @@ public class GenerationTest {
     @After
     public void tearDown() {
     }
-/*
+
     @Test
     public void testGenerationRule1() {
         gen.addLivingCell(0,0);
@@ -41,9 +41,63 @@ public class GenerationTest {
         
         Assert.assertTrue(gen.cellWillLive(1,1));
         Assert.assertTrue(gen.cellWillLive(1,-1));
-        Assert.assertFalse(gen.cellWillLive(0,1));
+        
+    }
+ /*   
+    @Test
+    public void testGenerationRule2a() {
+        gen.addLivingCell(0,0);
+        gen.addLivingCell(1,0);
+        gen.addLivingCell(2,0);
+       
+        Assert.assertFalse(gen.cellWillLive(0,0));
     }
 */
+ /*
+    @Test
+    public void testGenerationRule2b() {
+        gen.addLivingCell(0,0);
+       
+        Assert.assertFalse(gen.cellWillLive(0,0));
+    }
+*/
+    /*
+    @Test
+    public void testGenerationRule3a() {
+        gen.addLivingCell(0,0);
+        gen.addLivingCell(1,0);
+        gen.addLivingCell(2,0);
+
+        Assert.assertTrue(gen.cellWillLive(1,0));
+    }
+*/
+    /*
+    
+    @Test
+    public void testGenerationRule3b() {
+        gen.addLivingCell(0,0);
+        gen.addLivingCell(1,0);
+        gen.addLivingCell(2,0);
+        gen.addLivingCell(1,1);
+
+        Assert.assertTrue(gen.cellWillLive(1,1));
+    }
+*/
+    /*
+    
+    @Test
+    public void testGenerationRule4() {
+        gen.addLivingCell(0,0);
+        gen.addLivingCell(1,0);
+        gen.addLivingCell(0,2);
+        gen.addLivingCell(1,2);
+        gen.addLivingCell(0,1);
+       
+        Assert.assertFalse(gen.cellWillLive(1,1));
+    }
+*/
+ 
+
     @Test 
     public void testCellAlive(){
         gen.addLivingCell(1, 1);
