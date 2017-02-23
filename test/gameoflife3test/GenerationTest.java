@@ -43,7 +43,7 @@ public class GenerationTest {
         Assert.assertTrue(gen.cellWillLive(1,-1));
         
     }
- /*   
+    
     @Test
     public void testGenerationRule2a() {
         gen.addLivingCell(0,0);
@@ -52,16 +52,16 @@ public class GenerationTest {
        
         Assert.assertFalse(gen.cellWillLive(0,0));
     }
-*/
- /*
+
+ 
     @Test
     public void testGenerationRule2b() {
         gen.addLivingCell(0,0);
        
         Assert.assertFalse(gen.cellWillLive(0,0));
     }
-*/
-    /*
+
+    
     @Test
     public void testGenerationRule3a() {
         gen.addLivingCell(0,0);
@@ -70,9 +70,7 @@ public class GenerationTest {
 
         Assert.assertTrue(gen.cellWillLive(1,0));
     }
-*/
-    /*
-    
+
     @Test
     public void testGenerationRule3b() {
         gen.addLivingCell(0,0);
@@ -82,8 +80,6 @@ public class GenerationTest {
 
         Assert.assertTrue(gen.cellWillLive(1,1));
     }
-*/
-    /*
     
     @Test
     public void testGenerationRule4() {
@@ -95,7 +91,7 @@ public class GenerationTest {
        
         Assert.assertFalse(gen.cellWillLive(1,1));
     }
-*/
+
  
 
     @Test 

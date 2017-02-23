@@ -44,11 +44,14 @@ public class Generation {
         }
     return z;
     }
-
-    public boolean cellWillLive(int i, int i0) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public boolean cellWillLive(int x, int y){
+        Koordinate k = new Koordinate(x, y);
+        if (numberOfNeighboursAlive(x,y) <= 1){
+            return false;
+        }
+        if (numberOfNeighboursAlive(x,y) >= 4){
+            return false; 
+        }
+        else return true;
     }
-
-  
-    
 }
