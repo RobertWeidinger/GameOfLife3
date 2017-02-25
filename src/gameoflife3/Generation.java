@@ -6,6 +6,7 @@
 package gameoflife3;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 /**
  *
@@ -53,5 +54,9 @@ public class Generation {
             return false; 
         }
         else return true;
+    }
+
+    public Set<Koordinate> getLivingCellsAndNeighbours() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

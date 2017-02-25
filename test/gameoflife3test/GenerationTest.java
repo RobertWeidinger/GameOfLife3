@@ -7,6 +7,8 @@ package gameoflife3test;
 
 import gameoflife3.Generation;
 import gameoflife3.GoLState;
+import gameoflife3.Koordinate;
+import java.util.Set;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -112,4 +114,30 @@ public class GenerationTest {
         Assert.assertEquals(1, gen.numberOfNeighboursAlive(-1,0));
     }
 
+    
+    @Test
+    public void testLivingCellsAndNeighbours() {
+        gen.addLivingCell(1,1);
+        gen.addLivingCell(2,2);
+        Set<Koordinate> livingCellsAndNeighbours = gen.getLivingCellsAndNeighbours();
+/*  soll die folgenden x- und *-Koordinaten zurückliefern:
+    
+         3   _ * * *
+         2   * * x *
+         1   * x * *
+         0   * * * _
+    
+             0 1 2 3
+    
+    wobei die x die lebenden Zellen sind und die * die Nachbarn
+*/
+        for (int x=0; x<4; x++)
+            for (int y=0; y<4; y++) {
+                if ((x==0 && y==3) || (x==3 && y==0))
+                    Assert.assertFalse(livingCellsAndNeighbours.contains(new Koordinate(x,y)));
+                else
+                    Assert.assertTrue(livingCellsAndNeighbours.contains(new Koordinate(x,y)));
+            }
+        Assert.assertEquals(14, livingCellsAndNeighbours.size());
+    }                        
 }

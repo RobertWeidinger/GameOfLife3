@@ -9,7 +9,7 @@ package gameoflife3;
  *
  * @author KORBI
  */
-class Koordinate {
+public class Koordinate {
     public int x;
     public int y;
 
