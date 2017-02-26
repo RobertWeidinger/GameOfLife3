@@ -140,4 +140,36 @@ public class GenerationTest {
             }
         Assert.assertEquals(14, livingCellsAndNeighbours.size());
     }                        
+
+    /*
+    private void setupXYMinMaxTests() {
+        gen.addLivingCell(0, 0);
+        gen.addLivingCell(1, 0);
+        gen.addLivingCell(1, 1);
+    }
+
+    @Test
+    public void testGetXMin() {
+        setupXYMinMaxTests();
+        Assert.assertEquals(0, gen.getXMin());
+    }
+
+    @Test
+    public void testGetXMax() {
+        setupXYMinMaxTests();
+        Assert.assertEquals(1, gen.getXMax());
+    }
+
+    @Test
+    public void testGetYMin() {
+        setupXYMinMaxTests();
+        Assert.assertEquals(0, gen.getYMin());
+    }
+
+    @Test
+    public void testGetYMax() {
+        setupXYMinMaxTests();
+        Assert.assertEquals(1, gen.getYMax());
+    }
+*/
 }
